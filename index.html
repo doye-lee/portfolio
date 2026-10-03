@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DOYE LEE — Brand Designer</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+
+    const hero = document.querySelector('.index-hero');
+
+    function updateHeroDarkness() {
+      const heroHeight = hero.offsetHeight;
+      const scrollAmount = window.scrollY;
+
+      let progress = scrollAmount / heroHeight;
+
+      progress = Math.max(0, Math.min(progress, 1));
+
+      const brightness = 1 - (progress * 0.9);
+
+      hero.style.filter = `brightness(${brightness})`;
+    }
+
+    window.addEventListener('scroll', updateHeroDarkness);
+
+    updateHeroDarkness();
+
+  });
+</script>
+
+<body>
+
+  <!-- ========================================
+       HEADER
+  ========================================= -->
+
+  <header class="header">
+
+    <a href="index.html" class="logo">
+      DOYE LEE
+    </a>
+
+    <nav>
+      <a href="#about">PROFILE</a>
+      <a href="work.html">WORK</a>
+    </nav>
+
+  </header>
+
+
+
+  <main>
+
+
+    <!-- ========================================
+         HERO
+    ========================================= -->
+
+    <section class="index-hero">
+
+      <video
+        class="index-hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+      >
+        <source
+          src="videos/index-bg.mp4"
+          type="video/mp4"
+        >
+      </video>
+
+
+      <div class="index-hero-overlay"></div>
+
+
+      <div class="index-hero-title">
+
+        <h1>
+          V=V<sub>0</sub>+at
+        </h1>
+
+        <p>
+          BX/BI DESIGN PORTFOLIO
+        </p>
+
+      </div>
+
+
+      <p class="index-bottom-year">
+        2026
+      </p>
+
+    </section>
+
+
+
+<!-- ========================================
+     ABOUT
+========================================= -->
+
+<section class="about" id="about">
+
+  <div class="about-main">
+
+
+    <!-- LEFT : INTRO -->
+    <div class="about-intro">
+
+      
+
+      <h2>
+        도전하고,<br>
+        가속하는 디자이너
+      </h2>
+
+
+      <!-- FORMULA -->
+      <div class="about-formula">
+
+        <div class="formula-item">
+          <strong>V</strong>
+          <span>현재 속도</span>
+        </div>
+
+        <div class="formula-symbol">=</div>
+
+        <div class="formula-item">
+          <strong>V₀</strong>
+          <span>처음 속도</span>
+        </div>
+
+        <div class="formula-symbol">+</div>
+
+        <div class="formula-item">
+          <strong>a</strong>
+          <span>방향/가속도</span>
+        </div>
+
+        <div class="formula-symbol">×</div>
+
+        <div class="formula-item">
+          <strong>t</strong>
+          <span>시간</span>
+        </div>
+
+      </div>
+
+
+      <p class="about-description">
+        방향을 정하면 망설이기보다 직진하고,
+        새로운 가능성 앞에서는 주저하기보다 도전합니다.
+
+        가능성을 움직임으로 바꾸며,
+        계속해서 앞으로 나아가는 디자이너를 그려갑니다.
+      </p>
+
+    </div>
+
+
+
+    <!-- RIGHT : PROFILE -->
+    <div class="about-profile">
+
+
+      <div class="profile-row">
+
+        <p class="profile-title">ABOUT</p>
+
+        <div class="profile-content">
+          <strong>이도예(DOYE LEE)</strong>
+          <strong>+82 10 8769 1493</strong>
+          <strong>eldjgkeii@gmail.com</strong>
+        </div>
+
+      </div>
+
+
+      <div class="profile-row">
+
+        <p class="profile-title">EDUCATION</p>
+
+        <div class="profile-content">
+
+          <strong>기계공학과 입학</strong>
+
+          <span>
+            인하대학교 &nbsp;|&nbsp; 2026.09
+          </span>
+
+          <strong>
+            국비 시각편집실무자양성과정 수료
+          </strong>
+
+          <span>
+            SBS AIX ACADEMY &nbsp;|&nbsp; 2026.09
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <div class="profile-row">
+
+        <p class="profile-title">CERTIFICATES</p>
+
+        <div class="profile-content">
+
+          <strong>그래픽기술자격(GTQ) 1급</strong>
+
+          <span>
+            한국생산성본부(KPC) &nbsp;|&nbsp; 2026.09
+          </span>
+
+          <strong>OPIc / 영어 IM1</strong>
+
+          <span>
+            2026.09
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!-- 하단 구분선 -->
+  <div class="about-divider"></div>
+
+
+
+  <!-- CONTACT -->
+  <div class="about-contact">
+
+    <div>
+    
+
+    <a href="mailto:your@email.com">
+      © 2026 DOYE LEE
+    </a>
+
+  </div>
+
+</section>
