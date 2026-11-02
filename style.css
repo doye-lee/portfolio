@@ -2166,46 +2166,77 @@ nav a {
 
 
   /* ABOUT / EDUCATION / CERTIFICATES */
+.about-profile {
+  width: 100%;
 
-  .about-profile {
-    width: 100%;
+  padding-top: 0;
 
-    padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    gap: 48px;
-  }
+  gap: 44px;
+}
 
-  .profile-row {
-    display: grid;
-    grid-template-columns: 1fr;
+/* 본문 아래 얇은 세로선 */
+.about-profile::before {
+  content: "";
 
-    gap: 16px;
-  }
+  display: block;
+  width: 1px;
+  height: 56px;
 
-  .profile-title {
-    font-size: 24px;
+  background: rgba(255, 255, 255, 0.45);
 
-    color: transparent;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.5px #777777;
-  }
+  margin: 0 auto 4px;
+}
 
-  .profile-content {
-    align-items: flex-start;
-  }
+.profile-row {
+  width: 100%;
 
-  .profile-content strong {
-    margin-bottom: 6px;
+  display: grid;
+  grid-template-columns: 1fr;
 
-    font-size: 14px;
-  }
+  gap: 14px;
 
-  .profile-content span {
-    margin-bottom: 18px;
+  justify-items: center;
+  text-align: center;
+}
 
-    font-size: 11px;
-    line-height: 1.6;
-  }
+.profile-title {
+  margin: 0;
+
+  font-size: 24px;
+  line-height: 1;
+
+  text-align: center;
+
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px #777777;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+.profile-content strong {
+  margin: 0 0 8px;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.profile-content span {
+  margin: 0 0 18px;
+
+  font-size: 11px;
+  line-height: 1.7;
+}
 
 
   /* ABOUT 하단 */
@@ -2216,26 +2247,35 @@ nav a {
 
   .about-contact {
   padding-top: 25px;
-  padding-bottom: 28px;
+  padding-bottom: 42px;
 
+  display: flex;
   flex-direction: column;
 
   gap: 18px;
-  }
+}
 
-  .about-contact p {
-    font-size: 11px;
-  }
+.about-contact p {
+  width: 100%;
+  margin: 0;
 
-  .about-contact .copyright {
-    margin-top: 8px;
+  font-size: 11px;
+}
 
-    font-size: 10px;
-  }
+.about-contact .copyright {
+  width: 100%;
 
-  .about-contact a {
-    font-size: 14px;
-  }
+  margin-top: 12px;
+
+  font-size: 10px;
+  text-align: right;
+
+  align-self: flex-end;
+}
+
+.about-contact a {
+  font-size: 14px;
+}
 
 
   /* =====================================================
