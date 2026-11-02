@@ -818,7 +818,7 @@ nav a {
   position: relative;
 
   width: 100%;
-  height: 110vh;
+  height: 120vh;
 
   margin: 0;
   overflow: hidden;
@@ -1975,7 +1975,8 @@ nav a {
 
     width: 100%;
 
-    padding: 20px 18px;
+    padding: 32px 18px 20px;
+
 
     display: flex;
     justify-content: space-between;
@@ -1989,13 +1990,25 @@ nav a {
     font-weight: 700;
   }
 
-  nav {
-    gap: 18px;
-  }
+ nav {
+  display: flex;
+  width: auto;
 
-  nav a {
-    font-size: 15px;
-  }
+  margin-left: auto;
+
+  justify-content: flex-end;
+  align-items: center;
+
+  gap: 14px;
+ }
+
+
+.index-bottom-year {
+  right: 18px;
+  bottom: 24px;
+
+  font-size: 15px;
+}
 
 
   /* =====================================================
@@ -2110,7 +2123,7 @@ nav a {
   .about-formula {
     width: 100%;
 
-    margin-top: 26px;
+    margin-top: 18px;
 
     justify-content: center;
 
@@ -2143,7 +2156,7 @@ nav a {
   .about-description {
     width: 92%;
 
-    margin: 38px auto 0;
+    margin: 24px auto 0;
 
     font-size: 13px;
     line-height: 1.9;
@@ -2202,11 +2215,12 @@ nav a {
   }
 
   .about-contact {
-    padding-top: 25px;
+  padding-top: 25px;
+  padding-bottom: 28px;
 
-    flex-direction: column;
+  flex-direction: column;
 
-    gap: 18px;
+  gap: 18px;
   }
 
   .about-contact p {
