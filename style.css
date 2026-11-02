@@ -1986,7 +1986,7 @@ nav a {
   }
 
   .logo {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
   }
 
@@ -2001,6 +2001,11 @@ nav a {
 
   gap: 14px;
  }
+
+ nav a {
+  font-size: 15px;
+  font-weight: 500;
+}
 
 
 .index-bottom-year {
