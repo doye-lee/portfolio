@@ -530,221 +530,6 @@ nav a {
 }
 
 
-/* ========================================
-   ABOUT MOBILE
-======================================== */
-
-@media screen and (max-width: 768px) {
-
-  .index-hero-title h1 {
-    font-size: 15cqw;
-  }
-
-  .index-hero-title p {
-    font-size: 3.2cqw;
-    margin-top: 2cqw;
-  }
-
-}
-
-@media screen and (max-width: 768px) {
-
-  /* =========================
-     모바일 네비게이션
-  ========================= */
-
-  .header {
-    position: absolute;   /* fixed → absolute */
-    top: 0;
-    left: 0;
-
-    padding: 20px 18px;
-  }
-
-
-  /* =========================
-     모바일 ABOUT 가운데 정렬
-  ========================= */
-
-  .about-intro {
-    align-items: center;
-    text-align: center;
-
-    padding-top: 7cqw;
-  }
-
-  .about-small-title {
-    text-align: center;
-  }
-
-  .about-intro h2 {
-    width: 100%;
-    text-align: center;
-  }
-
-  .about-formula {
-    justify-content: center;
-    width: 100%;
-  }
-
-  .about-description {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-
-    text-align: center;
-  }
-
-}
-
-@media (max-width: 768px) {
-
-  
-  .header {
-    padding: 12px 12px;
-  }
-
-  .logo {
-    font-size: 15px;
-  }
-
-  nav {
-    gap: 115px;
-  }
-
-  nav a {
-    font-size: 14px;
-  }
-  
-  .about {
-    min-height: auto;
-
-    padding: 80px 20px 30px;
-  }
-
-
-  .about-main {
-    display: grid;
-
-    grid-template-columns: 1fr;
-
-    gap: 80px;
-  }
-
-
-  .about-small-title {
-    margin-bottom: 50px;
-
-    font-size: 12px;
-  }
-
-
-  .about-intro h2 {
-    font-size: 42px;
-
-    line-height: 1.12;
-  }
-
-
-  .about-formula {
-    margin-top: 30px;
-
-    gap: 16px;
-  }
-
-
-  .formula-item {
-    min-width: 42px;
-  }
-
-
-  .formula-item strong {
-    font-size: 21px;
-  }
-
-
-  .formula-item span {
-    margin-top: 8px;
-
-    font-size: 9px;
-  }
-
-
-  .formula-symbol {
-    font-size: 17px;
-  }
-
-
-  .about-description {
-    width: 100%;
-
-    margin-top: 50px;
-
-    font-size: 13px;
-    line-height: 1.9;
-  }
-
-
-  .about-profile {
-    padding-top: 0;
-
-    gap: 45px;
-  }
-
-
-  .profile-row {
-    grid-template-columns: 1fr;
-
-    gap: 20px;
-  }
-
-
-  .profile-title {
-    font-size: 18px;
-  }
-
-
-  .profile-content strong {
-    margin-bottom: 6px;
-
-    font-size: 14px;
-  }
-
-
-  .profile-content span {
-    margin-bottom: 20px;
-
-    font-size: 11px;
-  }
-
-
-  .about-divider {
-    margin-top: 70px;
-  }
-
-
-  .about-contact {
-    padding-top: 30px;
-  }
-
-
-  .about-contact p {
-    font-size: 11px;
-  }
-
-
-  .about-contact .copyright {
-    margin-top: 20px;
-
-    font-size: 10px;
-  }
-
-
-  .about-contact a {
-    font-size: 14px;
-  }
-
-}
 
 
 
@@ -942,47 +727,7 @@ nav a {
 }
 
 
-/* MOBILE */
 
-@media (max-width: 768px) {
-
-  .project-hero-content {
-    padding: 120px 20px 35px;
-  }
-
-  .project-logo {
-    width: 80%;
-  }
-
-  .project-intro {
-    font-size: 14px;
-    margin-bottom: 45px;
-  }
-
-  .project-meta {
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-  }
-
-  .project-content {
-    padding: 100px 20px;
-
-    display: block;
-  }
-
-  .project-content h2 {
-    margin-top: 30px;
-  }
-
-  .project-description {
-    margin-top: 40px;
-  }
-
-  .next-project {
-    padding: 60px 20px;
-  }
-
-}
 
 /* PROJECT GALLERY */
 
@@ -1073,7 +818,7 @@ nav a {
   position: relative;
 
   width: 100%;
-  height: 170vh;
+  height: 120vh;
 
   margin: 0;
   overflow: hidden;
@@ -1141,44 +886,6 @@ nav a {
 }
 
 
-/* MOBILE */
-
-@media (max-width: 768px) {
-  .story-section {
-    padding: 0;
-  }
-
-  .story-canvas {
-    width: 100%;
-    aspect-ratio: auto;
-    min-height: auto;
-  }
-
-  .story-content {
-    padding: 40px 20px 32px;
-  }
-
-  .story-content h2 {
-    max-width: 100%;
-    font-size: clamp(28px, 8vw, 42px);
-    line-height: 1.15;
-  }
-
-  .story-content h2 br {
-    display: none;
-  }
-
-  .story-description {
-    max-width: 100%;
-    font-size: 14px;
-    line-height: 1.7;
-  }
-
-  .story-diagram {
-    width: 100%;
-    margin-top: 28px;
-  }
-}
 
 
 /* ========================================
@@ -1343,34 +1050,6 @@ nav a {
   display: block;
 }
 
-
-/* ========================================
-   APPLICATION MOBILE
-======================================== */
-
-@media (max-width: 768px) {
-
-  .identity-section,
-  .application-section {
-    padding: 100px 20px;
-  }
-
-  .identity-heading,
-  .application-heading {
-    display: block;
-    margin-bottom: 70px;
-  }
-
-  .identity-heading h2,
-  .application-heading h2 {
-    margin-top: 25px;
-  }
-
-  .identity-item {
-    margin-bottom: 80px;
-  }
-
-}
 
 
 
@@ -1793,7 +1472,7 @@ nav a {
 
 .morphix-experience {
   width: 100%;
-  padding: 1cqw 2cqw 4cqw;
+  padding: 3cqw 2cqw 4cqw;
 
   background: #0b0b0b;
   color: #ffffff;
@@ -1937,50 +1616,6 @@ nav a {
 
 
 
-/* ========================================
-   MOBILE
-======================================== */
-
-@media (max-width: 768px) {
-
-  .morphix-story {
-    aspect-ratio: auto;
-    min-height: 100svh;
-  }
-
-
-  .morphix-story-logo {
-    width: 36%;
-    top: 8%;
-  }
-
-
-  .morphix-value-grid {
-    position: relative;
-
-    left: auto;
-    right: auto;
-    bottom: auto;
-
-    width: 100%;
-
-    padding: 40% 20px 40px;
-
-    grid-template-columns: 1fr;
-
-    gap: 20px;
-  }
-
-
-  .morphix-can-grid {
-    padding: 40px 20px;
-
-    grid-template-columns: 1fr;
-
-    gap: 25px;
-  }
-
-}
 
 /* =========================================================
    SINECT
@@ -2300,42 +1935,1080 @@ nav a {
 }
 
 
+/* =========================================================
+   FINAL MOBILE STYLE
+   이 코드는 style.css의 가장 마지막에 배치
+========================================================= */
 
-/* ========================================
-   MOBILE
-======================================== */
+@media screen and (max-width: 768px) {
 
-@media (max-width: 768px) {
+  /* =====================================================
+     GLOBAL
+  ===================================================== */
 
-  .sinect-hero-logo {
-    width: 78%;
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  img,
+  video {
+    max-width: 100%;
   }
 
 
-  .sinect-values {
-    padding: 40px 20px;
+  /* =====================================================
+     HEADER
+     첫 화면과 함께 위로 스크롤되도록 설정
+  ===================================================== */
+
+  .header {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 20px 18px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    z-index: 100;
+  }
+
+  .logo {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  nav {
+    gap: 18px;
+  }
+
+  nav a {
+    font-size: 15px;
   }
 
 
-  .sinect-value-grid {
+  /* =====================================================
+     INDEX — MAIN HERO
+  ===================================================== */
+
+  .index-hero {
+    width: 100%;
+    height: 100svh;
+    min-height: 620px;
+  }
+
+  .index-hero-video {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .index-hero-title {
+    left: 50%;
+    top: 52%;
+
+    transform: translate(-50%, -50%);
+
+    width: 92%;
+
+    text-align: right;
+  }
+
+  .index-hero-title h1 {
+    font-size: clamp(56px, 17vw, 74px);
+
+    line-height: 0.9;
+    letter-spacing: -0.07em;
+  }
+
+  .index-hero-title p {
+    margin-top: 12px;
+
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  .index-bottom-year {
+    right: 18px;
+    bottom: 22px;
+
+    font-size: 18px;
+  }
+
+
+  /* =====================================================
+     PROFILE / ABOUT
+  ===================================================== */
+
+  .about {
+    width: 100%;
+
+    min-height: auto;
+
+    padding: 80px 20px 30px;
+  }
+
+  /* 기존 회색 영상 배경 제거 */
+  .about-bg-video {
+    display: none;
+  }
+
+  .about-main {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 70px;
+  }
+
+
+  /* 왼쪽 소개 영역 */
+
+  .about-intro {
+    width: 100%;
+
+    padding-top: 35px;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-small-title {
+    margin: 0 0 38px;
+
+    font-size: 13px;
+
+    text-align: center;
+  }
+
+  .about-intro h2 {
+    width: 100%;
+
+    margin: 0;
+
+    font-size: 38px;
+    line-height: 1.15;
+
+    text-align: center;
+  }
+
+
+  /* 수식 */
+
+  .about-formula {
+    width: 100%;
+
+    margin-top: 26px;
+
+    justify-content: center;
+
+    gap: 12px;
+  }
+
+  .formula-item {
+    min-width: 40px;
+  }
+
+  .formula-item strong {
+    font-size: 21px;
+  }
+
+  .formula-item span {
+    margin-top: 8px;
+
+    font-size: 9px;
+  }
+
+  .formula-symbol {
+    padding-top: 7px;
+
+    font-size: 17px;
+  }
+
+
+  /* 소개 본문 */
+
+  .about-description {
+    width: 92%;
+
+    margin: 38px auto 0;
+
+    font-size: 13px;
+    line-height: 1.9;
+
+    text-align: center;
+  }
+
+
+  /* ABOUT / EDUCATION / CERTIFICATES */
+
+  .about-profile {
+    width: 100%;
+
+    padding-top: 0;
+
+    gap: 48px;
+  }
+
+  .profile-row {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .profile-title {
+    font-size: 24px;
+
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0.5px #777777;
+  }
+
+  .profile-content {
+    align-items: flex-start;
+  }
+
+  .profile-content strong {
+    margin-bottom: 6px;
+
+    font-size: 14px;
+  }
+
+  .profile-content span {
+    margin-bottom: 18px;
+
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+
+  /* ABOUT 하단 */
+
+  .about-divider {
+    margin-top: 65px;
+  }
+
+  .about-contact {
+    padding-top: 25px;
+
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  .about-contact p {
+    font-size: 11px;
+  }
+
+  .about-contact .copyright {
+    margin-top: 8px;
+
+    font-size: 10px;
+  }
+
+  .about-contact a {
+    font-size: 14px;
+  }
+
+
+  /* =====================================================
+     WORK PAGE
+  ===================================================== */
+
+  .work-page {
+    min-height: 100svh;
+
+    padding: 100px 18px 40px;
+  }
+
+  .work-page-title {
+    margin: 30px 0 55px;
+
+    font-size: 48px;
+    line-height: 1;
+  }
+
+  .work-page-grid {
+    grid-template-columns: 1fr;
+
+    gap: 48px;
+  }
+
+  .work-card-info {
+    margin-bottom: 10px;
+  }
+
+  .work-card-image {
+    width: 100%;
+
+    aspect-ratio: 1 / 0.9;
+  }
+
+  .work-card-logo {
+    width: 68%;
+  }
+
+  .grizen-work-logo {
+    width: 74%;
+  }
+
+  .morphix-work-logo {
+    width: 72%;
+  }
+
+  .sinect-work-logo {
+    width: 68%;
+  }
+
+  .work-footer {
+    margin-top: 70px;
+
+    padding-top: 20px;
+  }
+
+  .work-footer p {
+    font-size: 11px;
+  }
+
+
+  /* =====================================================
+     PROJECT HERO
+     GRIZEN / MORPHIX / SINECT 공통
+  ===================================================== */
+
+  .project-hero {
+    width: 100%;
+
+    height: 100svh;
+    min-height: 680px;
+  }
+
+  .project-hero-bg {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  .project-hero-content {
+    width: 100%;
+    height: 100%;
+
+    padding: 90px 18px 24px;
+  }
+
+  .project-hero-main {
+    left: 50%;
+    top: 43%;
+
+    transform: translate(-50%, -50%);
+
+    width: 88%;
+  }
+
+  .project-logo {
+    width: 82%;
+
+    margin-bottom: 24px;
+  }
+
+  .project-intro {
+    width: 100%;
+
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .project-intro br {
+    display: none;
+  }
+
+
+  /* 하단 프로젝트 정보 */
+
+  .project-meta {
+    padding-top: 14px;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 16px;
+    row-gap: 16px;
+  }
+
+  .project-meta span {
+    margin-bottom: 5px;
+
+    font-size: 9px;
+  }
+
+  .project-meta p {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+
+  /* 일반 프로젝트 본문 */
+
+  .project-content {
+    min-height: auto;
+
+    padding: 80px 20px;
+
+    display: block;
+  }
+
+  .project-section-number {
+    font-size: 11px;
+  }
+
+  .project-content h2 {
+    margin-top: 24px;
+
+    font-size: 42px;
+    line-height: 0.95;
+  }
+
+  .project-description {
+    margin-top: 35px;
+
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .next-project {
+    min-height: 300px;
+
+    padding: 50px 20px;
+  }
+
+  .next-project p {
+    font-size: 12px;
+  }
+
+  .next-project a {
+    font-size: 44px;
+  }
+
+
+  /* =====================================================
+     GRIZEN — OVERVIEW
+  ===================================================== */
+
+  .overview-section {
+    padding: 60px 20px 70px;
+  }
+
+  .overview-number {
+    margin-bottom: 20px;
+
+    font-size: 11px;
+  }
+
+  .overview-heading h2 {
+    font-size: 30px;
+    line-height: 1.15;
+
+    letter-spacing: -0.04em;
+  }
+
+  .overview-description {
+    width: 100%;
+
+    margin: 24px auto 0;
+
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+
+  /* =====================================================
+     GRIZEN — BRAND STORY
+  ===================================================== */
+
+  .story-section {
+    padding: 0;
+  }
+
+  .story-canvas {
+    width: 100%;
+
+    height: auto;
+    min-height: 760px;
+  }
+
+  .story-bg {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+  }
+
+  .story-content {
+    width: 100%;
+
+    height: auto;
+    min-height: 760px;
+
+    padding: 65px 20px 40px;
+  }
+
+  .section-label-light {
+    margin: 0 0 18px;
+
+    font-size: 12px;
+  }
+
+  .story-content h2 {
+    max-width: 100%;
+
+    margin: 0;
+
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .story-content h2 br {
+    display: none;
+  }
+
+  .story-description {
+    max-width: 100%;
+
+    margin: 22px 0 0;
+
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .story-diagram {
+    width: 100%;
+
+    margin: 35px auto 0;
+  }
+
+
+  /* =====================================================
+     GRIZEN — IDENTITY
+  ===================================================== */
+
+  .identity-section {
+    padding: 0;
+  }
+
+  .identity-item {
+    margin-bottom: 0;
+  }
+
+  .grizen-system-row {
+    width: 100%;
+
+    grid-template-columns: 1fr;
+  }
+
+  .grizen-logo-panel {
+    width: 100%;
+
+    padding: 70px 24px;
+  }
+
+  .grizen-logo-image {
+    width: 62%;
+
+    margin-bottom: 28px;
+  }
+
+  .grizen-logo-text {
+    width: 90%;
+
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .grizen-color-panel,
+  .grizen-typo-panel {
+    width: 100%;
+  }
+
+  .grizen-color-image,
+  .grizen-typo-image {
+    width: 100%;
+  }
+
+
+  /* GRIZEN APPLICATION */
+
+  .application-section {
+    padding: 0;
+  }
+
+  .application-heading {
+    margin: 0;
+
+    padding: 60px 20px;
+  }
+
+  .application-heading h2 {
+    margin-top: 20px;
+
+    font-size: 44px;
+  }
+
+  .mockup-grid {
+    gap: 0;
+  }
+
+
+  /* =====================================================
+     MORPHIX — OVERVIEW
+  ===================================================== */
+
+  .morphix-overview-inner {
+    min-height: auto;
+
+    grid-template-columns: 1fr;
+  }
+
+  .morphix-overview-text {
+    width: 100%;
+
+    padding: 70px 20px 30px;
+
+    gap: 38px;
+  }
+
+  .morphix-overview-block {
+    width: 100%;
+  }
+
+  .morphix-overview-block h2 {
+    margin-bottom: 12px;
+
+    font-size: 32px;
+  }
+
+  .morphix-overview-block p {
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .morphix-overview-image {
+    width: 100%;
+    height: 90vw;
+
+    max-height: 460px;
+  }
+
+  .morphix-overview-image img {
+    top: 50%;
+    right: -10%;
+
+    width: 120%;
+    height: 120%;
+
+    object-fit: contain;
+  }
+
+
+  /* =====================================================
+     MORPHIX — STORY / CORE VALUE
+  ===================================================== */
+
+  .morphix-story {
+    min-height: auto;
+
+    padding: 60px 20px;
+  }
+
+  .morphix-story-label {
+    width: 100%;
+
+    margin: 0 0 18px;
+
+    font-size: 14px;
+  }
+
+  .morphix-story-logo {
+    width: 100%;
+
+    margin: 0;
+  }
+
+  .morphix-value-label {
+    width: 100%;
+
+    margin: 60px 0 18px;
+
+    font-size: 14px;
+  }
+
+  .morphix-value-grid {
+    position: static;
+
+    width: 100%;
+
+    padding: 0;
+
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .morphix-value-card {
+    border-radius: 14px;
+  }
+
+  .morphix-value-text {
+    width: 86%;
+  }
+
+  .morphix-value-text h3 {
+    margin-bottom: 12px;
+
+    font-size: 30px;
+  }
+
+  .morphix-value-text p {
+    font-size: 13px;
+    line-height: 1.65;
+  }
+
+
+  /* =====================================================
+     MORPHIX — FIVE FLAVORS
+  ===================================================== */
+
+  .morphix-flavors {
+    padding-top: 70px;
+  }
+
+  .morphix-flavors-title {
+    width: 90%;
+
+    margin-bottom: 50px;
+  }
+
+  /*
+    현재 HTML에서 설명 5개와 캔 5개가 서로 다른 Grid라
+    모바일에서는 각각 한 줄씩 세로로 배치
+  */
+
+  .morphix-flavor-info-grid {
+    padding: 0 20px;
+
+    grid-template-columns: 1fr;
+
+    gap: 32px;
+
+    margin-bottom: 40px;
+  }
+
+  .morphix-flavor-info {
+    padding: 0;
+  }
+
+  .morphix-flavor-info h3 {
+    margin-bottom: 7px;
+
+    font-size: 25px;
+  }
+
+  .morphix-flavor-info strong {
+    margin-bottom: 12px;
+
+    font-size: 11px;
+  }
+
+  .morphix-flavor-info p {
+    max-width: 300px;
+
+    margin: 0 auto;
+
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .morphix-can-grid {
+    padding: 20px 20px 55px;
+
     grid-template-columns: 1fr;
 
     gap: 20px;
   }
 
 
-  .sinect-logo-system {
-    padding: 40px 20px;
+  /* =====================================================
+     MORPHIX — GRAPHIC MOTION
+  ===================================================== */
+
+  .morphix-motion {
+    padding: 55px 0 20px;
+  }
+
+  .morphix-motion-video {
+    width: 100%;
+    height: auto;
   }
 
 
-  .sinect-logo-system img {
+  /* =====================================================
+     MORPHIX — BRAND EXPERIENCE
+  ===================================================== */
+
+  .morphix-experience {
+    padding: 30px 20px 60px;
+  }
+
+  .morphix-experience-inner {
+    width: 100%;
+    height: auto;
+
+    overflow: visible;
+  }
+
+  .morphix-experience-image {
+    position: relative;
+
+    left: auto;
+    top: auto;
+
+    width: 100%;
+    height: 65vw;
+
+    max-height: 360px;
+  }
+
+  .morphix-experience-content {
+    position: relative;
+
+    top: auto;
+    right: auto;
+
+    width: 100%;
+    height: auto;
+
+    padding-top: 28px;
+  }
+
+  .morphix-experience-label {
+    font-size: 13px;
+
+    text-align: left;
+  }
+
+  .morphix-experience-text {
+    position: static;
+
+    width: 100%;
+
+    margin-top: 30px;
+
+    transform: none;
+  }
+
+  .morphix-experience-text h2 {
+    margin-bottom: 18px;
+
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .morphix-experience-text p {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+
+  /* =====================================================
+     SINECT — HERO
+  ===================================================== */
+
+  .sinect-hero-logo {
+    width: 76%;
+  }
+
+
+  /* =====================================================
+     SINECT — OVERVIEW
+  ===================================================== */
+
+  .sinect-overview {
+    width: 100%;
+
+    min-height: 620px;
+  }
+
+  .sinect-overview-bg {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .sinect-overview-content {
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    width: 88%;
+  }
+
+  .sinect-overview-label {
+    margin-bottom: 18px;
+
+    font-size: 14px;
+  }
+
+  .sinect-overview-content h2 {
+    margin-bottom: 20px;
+
+    font-size: 31px;
+    line-height: 1.2;
+
+    font-weight: 600;
+  }
+
+  .sinect-overview-description {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .sinect-overview-description br {
+    display: none;
+  }
+
+
+  /* =====================================================
+     SINECT — CORE VALUE
+  ===================================================== */
+
+  .sinect-values {
+    padding: 70px 20px;
+  }
+
+  .sinect-values-heading {
+    width: 100%;
+
+    margin-bottom: 38px;
+  }
+
+  .sinect-values-label {
+    margin-bottom: 12px;
+
+    font-size: 14px;
+  }
+
+  .sinect-values-heading h2 {
+    margin-bottom: 20px;
+
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .sinect-values-description {
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .sinect-value-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+
+  /* =====================================================
+     SINECT — LOGO SYSTEM
+  ===================================================== */
+
+  .sinect-logo-system {
+    width: 100%;
+
+    height: auto;
+    min-height: 460px;
+
+    padding: 60px 20px;
+  }
+
+  .sinect-logo-label {
+    margin-bottom: 38px;
+
+    font-size: 14px;
+  }
+
+  /*
+    기존 모바일 코드의
+    .sinect-logo-system img { width:100%; }
+    를 다시 덮어쓰기 위한 선택자
+  */
+
+  .sinect-logo-system .sinect-logo-image {
+    width: 52%;
+
+    margin-bottom: 32px;
+  }
+
+  .sinect-logo-description {
+    width: 90%;
+
+    font-size: 13px;
+    line-height: 1.8;
+  }
+
+  .sinect-logo-description br {
+    display: none;
+  }
+
+
+  /* =====================================================
+     SINECT — IDENTITY
+  ===================================================== */
+
+  .sinect-identity-top {
     width: 100%;
   }
 
-
   .sinect-identity-bottom {
     grid-template-columns: 1fr;
+  }
+
+
+  /* =====================================================
+     MOCKUPS
+  ===================================================== */
+
+  .morphix-mockups,
+  .sinect-mockups {
+    width: 100%;
+
+    gap: 0;
+  }
+
+  .morphix-mockups img,
+  .sinect-mockups img,
+  .mockup-grid img {
+    width: 100%;
+    height: auto;
   }
 
 }
