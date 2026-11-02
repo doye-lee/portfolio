@@ -547,6 +547,56 @@ nav a {
 
 }
 
+@media screen and (max-width: 768px) {
+
+  /* =========================
+     모바일 네비게이션
+  ========================= */
+
+  .header {
+    position: absolute;   /* fixed → absolute */
+    top: 0;
+    left: 0;
+
+    padding: 20px 18px;
+  }
+
+
+  /* =========================
+     모바일 ABOUT 가운데 정렬
+  ========================= */
+
+  .about-intro {
+    align-items: center;
+    text-align: center;
+
+    padding-top: 7cqw;
+  }
+
+  .about-small-title {
+    text-align: center;
+  }
+
+  .about-intro h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-formula {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-description {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+  }
+
+}
+
 @media (max-width: 768px) {
 
   
