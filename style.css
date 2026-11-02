@@ -534,11 +534,24 @@ nav a {
    ABOUT MOBILE
 ======================================== */
 
+@media screen and (max-width: 768px) {
+
+  .index-hero-title h1 {
+    font-size: 18cqw;
+  }
+
+  .index-hero-title p {
+    font-size: 3.2cqw;
+    margin-top: 2cqw;
+  }
+
+}
+
 @media (max-width: 768px) {
 
   
   .header {
-    padding: 30px 30px;
+    padding: 15px 15px;
   }
 
   .logo {
