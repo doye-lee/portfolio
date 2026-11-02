@@ -537,7 +537,7 @@ nav a {
 @media screen and (max-width: 768px) {
 
   .index-hero-title h1 {
-    font-size: 20cqw;
+    font-size: 15cqw;
   }
 
   .index-hero-title p {
@@ -601,7 +601,7 @@ nav a {
 
   
   .header {
-    padding: 15px 15px;
+    padding: 12px 12px;
   }
 
   .logo {
@@ -609,7 +609,7 @@ nav a {
   }
 
   nav {
-    gap: 10px;
+    gap: 115px;
   }
 
   nav a {
