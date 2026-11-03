@@ -1935,6 +1935,13 @@ nav a {
 }
 
 
+
+
+
+.morphix-flavors-mobile {
+  display: none;
+}
+
 /* =========================================================
    FINAL MOBILE STYLE
    이 코드는 style.css의 가장 마지막에 배치
@@ -2063,7 +2070,7 @@ nav a {
     right: 18px;
     bottom: 22px;
 
-    font-size: 18px;
+    font-size: 15px;
   }
 
 
@@ -2389,8 +2396,8 @@ nav a {
 
     margin: 0;
 
-    font-size: 14px;
-    line-height: 1.65;
+    font-size: 11px;
+    line-height: 1.6;
   }
 
   .project-intro br {
@@ -2450,9 +2457,9 @@ nav a {
   }
 
   .next-project {
-    min-height: 300px;
+    min-height: 180px;
 
-    padding: 50px 20px;
+    padding: 30px 20px 35px;
   }
 
   .next-project p {
@@ -2490,7 +2497,7 @@ nav a {
 
     margin: 24px auto 0;
 
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.8;
   }
 
@@ -2532,27 +2539,31 @@ nav a {
     font-size: 12px;
   }
 
-  .story-content h2 {
-    max-width: 100%;
+ .story-content h2 {
+  max-width: 100%;
 
-    margin: 0;
+  margin: 0 auto;
 
-    font-size: 30px;
-    line-height: 1.2;
-  }
+  font-size: 27px;
+  line-height: 1.25;
+
+  text-align: center;
+}
 
   .story-content h2 br {
     display: none;
   }
 
   .story-description {
-    max-width: 100%;
+  max-width: 92%;
 
-    margin: 22px 0 0;
+  margin: 18px auto 0;
 
-    font-size: 13px;
-    line-height: 1.75;
-  }
+  font-size: 12px;
+  line-height: 1.75;
+
+  text-align: center;
+}
 
   .story-diagram {
     width: 100%;
@@ -2594,7 +2605,7 @@ nav a {
   .grizen-logo-text {
     width: 90%;
 
-    font-size: 13px;
+    font-size: 11px;
     line-height: 1.75;
   }
 
@@ -2636,51 +2647,89 @@ nav a {
      MORPHIX — OVERVIEW
   ===================================================== */
 
-  .morphix-overview-inner {
-    min-height: auto;
+  .morphix-overview {
+  margin: 0;
+  padding: 0;
+}
 
-    grid-template-columns: 1fr;
-  }
+.morphix-overview-inner {
+  min-height: auto;
 
-  .morphix-overview-text {
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
-    padding: 70px 20px 30px;
+/* 음료 이미지가 가장 먼저 */
+.morphix-overview-image {
+  order: 1;
 
-    gap: 38px;
-  }
+  width: 100%;
+  height: 95vw;
+  max-height: none;
 
-  .morphix-overview-block {
-    width: 100%;
-  }
+  margin: 0;
+  overflow: hidden;
+}
 
-  .morphix-overview-block h2 {
-    margin-bottom: 12px;
+.morphix-overview-image img {
+  position: absolute;
 
-    font-size: 32px;
-  }
+  left: 50%;
+  top: 50%;
+  right: auto;
 
-  .morphix-overview-block p {
-    font-size: 13px;
-    line-height: 1.75;
-  }
+  width: 100%;
+  height: 100%;
 
-  .morphix-overview-image {
-    width: 100%;
-    height: 90vw;
+  transform: translate(-50%, -50%) scale(1.25);
 
-    max-height: 460px;
-  }
+  object-fit: contain;
+  object-position: center;
+}
 
-  .morphix-overview-image img {
-    top: 50%;
-    right: -10%;
 
-    width: 120%;
-    height: 120%;
+/* Overview / Goals 텍스트 */
 
-    object-fit: contain;
-  }
+.morphix-overview-text {
+  order: 2;
+
+  width: 100%;
+
+  padding: 50px 20px 65px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 38px;
+
+  text-align: center;
+  align-items: center;
+}
+
+.morphix-overview-block {
+  width: 100%;
+
+  text-align: center;
+}
+
+.morphix-overview-block h2 {
+  margin: 0 0 12px;
+
+  font-size: 28px;
+
+  text-align: center;
+}
+
+.morphix-overview-block p {
+  margin: 0 auto;
+
+  max-width: 330px;
+
+  font-size: 12px;
+  line-height: 1.75;
+
+  text-align: center;
+}
 
 
   /* =====================================================
@@ -2716,40 +2765,47 @@ nav a {
   }
 
   .morphix-value-grid {
-    position: static;
+  position: static;
 
-    width: 100%;
+  width: 100%;
 
-    padding: 0;
+  padding: 0;
 
-    grid-template-columns: 1fr;
+  display: grid;
+  grid-template-columns: 1fr;
 
-    gap: 18px;
-  }
+  gap: 26px;
+}
 
-  .morphix-value-card {
-    border-radius: 14px;
-  }
+.morphix-value-card {
+  width: 76%;
+  max-width: 290px;
 
-  .morphix-value-text {
-    width: 86%;
-  }
+  margin: 0 auto;
 
-  .morphix-value-text h3 {
-    margin-bottom: 12px;
+  border-radius: 14px;
+}
 
-    font-size: 30px;
-  }
+.morphix-value-text {
+  width: 84%;
+}
 
-  .morphix-value-text p {
-    font-size: 13px;
-    line-height: 1.65;
-  }
+.morphix-value-text h3 {
+  margin-bottom: 10px;
+
+  font-size: 25px;
+}
+
+.morphix-value-text p {
+  font-size: 11px;
+  line-height: 1.6;
+}
 
 
   /* =====================================================
      MORPHIX — FIVE FLAVORS
   ===================================================== */
+  
 
   .morphix-flavors {
     padding-top: 70px;
@@ -2761,53 +2817,73 @@ nav a {
     margin-bottom: 50px;
   }
 
+  
   /*
     현재 HTML에서 설명 5개와 캔 5개가 서로 다른 Grid라
     모바일에서는 각각 한 줄씩 세로로 배치
   */
 
-  .morphix-flavor-info-grid {
-    padding: 0 20px;
+  .morphix-flavor-info-grid,
+.morphix-can-grid {
+  display: none;
+}
 
-    grid-template-columns: 1fr;
+.morphix-flavors-mobile {
+  display: flex;
 
-    gap: 32px;
+  flex-direction: column;
 
-    margin-bottom: 40px;
-  }
+  gap: 70px;
 
-  .morphix-flavor-info {
-    padding: 0;
-  }
+  padding: 0 20px 70px;
+}
 
-  .morphix-flavor-info h3 {
-    margin-bottom: 7px;
+.morphix-flavor-set {
+  width: 100%;
 
-    font-size: 25px;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  .morphix-flavor-info strong {
-    margin-bottom: 12px;
+  text-align: center;
+}
 
-    font-size: 11px;
-  }
+.morphix-flavor-set .morphix-flavor-info {
+  width: 100%;
 
-  .morphix-flavor-info p {
-    max-width: 300px;
+  padding: 0;
+}
 
-    margin: 0 auto;
+.morphix-flavor-set .morphix-flavor-info h3 {
+  font-size: 24px;
+}
 
-    font-size: 12px;
-    line-height: 1.7;
-  }
+.morphix-flavor-set .morphix-flavor-info strong {
+  font-size: 11px;
+}
 
-  .morphix-can-grid {
-    padding: 20px 20px 55px;
+.morphix-flavor-set .morphix-flavor-info p {
+  width: 85%;
+  max-width: 300px;
 
-    grid-template-columns: 1fr;
+  margin: 0 auto;
 
-    gap: 20px;
-  }
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+
+/* 각 설명 바로 아래 캔 */
+
+.morphix-flavor-set img {
+  display: block;
+
+  width: 38%;
+  max-width: 140px;
+  height: auto;
+
+  margin: 28px auto 0;
+}
 
 
   /* =====================================================
@@ -2828,68 +2904,101 @@ nav a {
      MORPHIX — BRAND EXPERIENCE
   ===================================================== */
 
-  .morphix-experience {
-    padding: 30px 20px 60px;
-  }
+.morphix-experience {
+  padding: 55px 20px 60px;
+}
 
-  .morphix-experience-inner {
-    width: 100%;
-    height: auto;
+.morphix-experience-inner {
+  width: 100%;
+  height: auto;
 
-    overflow: visible;
-  }
+  display: flex;
+  flex-direction: column;
 
-  .morphix-experience-image {
-    position: relative;
+  overflow: visible;
+}
 
-    left: auto;
-    top: auto;
 
-    width: 100%;
-    height: 65vw;
+/* 설명이 먼저 */
 
-    max-height: 360px;
-  }
+.morphix-experience-content {
+  order: 1;
 
-  .morphix-experience-content {
-    position: relative;
+  position: relative;
 
-    top: auto;
-    right: auto;
+  top: auto;
+  right: auto;
 
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 
-    padding-top: 28px;
-  }
+  padding: 0;
 
-  .morphix-experience-label {
-    font-size: 13px;
+  text-align: center;
+}
 
-    text-align: left;
-  }
 
-  .morphix-experience-text {
-    position: static;
+/* 이미지가 설명 아래 */
 
-    width: 100%;
+.morphix-experience-image {
+  order: 2;
 
-    margin-top: 30px;
+  position: relative;
 
-    transform: none;
-  }
+  left: auto;
+  top: auto;
 
-  .morphix-experience-text h2 {
-    margin-bottom: 18px;
+  width: 100%;
+  height: auto;
 
-    font-size: 30px;
-    line-height: 1.2;
-  }
+  margin-top: 30px;
+}
 
-  .morphix-experience-text p {
-    font-size: 13px;
-    line-height: 1.8;
-  }
+.morphix-experience-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+
+/* 텍스트 */
+
+.morphix-experience-label {
+  font-size: 13px;
+
+  text-align: center;
+}
+
+.morphix-experience-text {
+  position: static;
+
+  width: 88%;
+
+  margin: 24px auto 0;
+
+  transform: none;
+
+  text-align: center;
+}
+
+.morphix-experience-text h2 {
+  margin-bottom: 15px;
+
+  font-size: 27px;
+  line-height: 1.2;
+
+  text-align: center;
+}
+
+.morphix-experience-text p {
+  font-size: 12px;
+  line-height: 1.8;
+
+  text-align: center;
+}
 
 
   /* =====================================================
@@ -2905,138 +3014,149 @@ nav a {
      SINECT — OVERVIEW
   ===================================================== */
 
-  .sinect-overview {
-    width: 100%;
+  /* =====================================================
+   SINECT — OVERVIEW
+===================================================== */
 
-    min-height: 620px;
-  }
+.sinect-overview {
+  width: 100%;
+  min-height: 620px;
+}
 
-  .sinect-overview-bg {
-    position: absolute;
+.sinect-overview-bg {
+  position: absolute;
+  inset: 0;
 
-    inset: 0;
+  width: 100%;
+  height: 100%;
 
-    width: 100%;
-    height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
-    object-fit: cover;
-    object-position: center;
-  }
+.sinect-overview-content {
+  top: 40%;          /* 기존 50% → 위로 이동 */
+  left: 50%;
 
-  .sinect-overview-content {
-    top: 50%;
-    left: 50%;
+  transform: translate(-50%, -50%);
 
-    transform: translate(-50%, -50%);
+  width: 88%;
 
-    width: 88%;
-  }
+  text-align: center;
+}
 
-  .sinect-overview-label {
-    margin-bottom: 18px;
+.sinect-overview-label {
+  margin-bottom: 14px;
 
-    font-size: 14px;
-  }
+  font-size: 12px;   /* 기존 14px */
+}
 
-  .sinect-overview-content h2 {
-    margin-bottom: 20px;
+.sinect-overview-content h2 {
+  margin-bottom: 16px;
 
-    font-size: 31px;
-    line-height: 1.2;
+  font-size: 27px;   /* 기존 31px */
+  line-height: 1.2;
 
-    font-weight: 600;
-  }
+  font-weight: 600;
+}
 
-  .sinect-overview-description {
-    font-size: 13px;
-    line-height: 1.8;
-  }
+.sinect-overview-description {
+  font-size: 11px;   /* 기존 13px */
+  line-height: 1.8;
+}
 
-  .sinect-overview-description br {
-    display: none;
-  }
+.sinect-overview-description br {
+  display: none;
+}
 
 
   /* =====================================================
      SINECT — CORE VALUE
   ===================================================== */
 
-  .sinect-values {
-    padding: 70px 20px;
-  }
+  /* =====================================================
+   SINECT — CORE VALUE
+===================================================== */
 
-  .sinect-values-heading {
-    width: 100%;
+.sinect-values {
+  padding: 65px 20px;
+}
 
-    margin-bottom: 38px;
-  }
+.sinect-values-heading {
+  width: 100%;
 
-  .sinect-values-label {
-    margin-bottom: 12px;
+  margin-bottom: 34px;
+}
 
-    font-size: 14px;
-  }
+.sinect-values-label {
+  margin-bottom: 10px;
 
-  .sinect-values-heading h2 {
-    margin-bottom: 20px;
+  font-size: 12px;   /* 기존 14px */
+}
 
-    font-size: 32px;
-    line-height: 1.2;
-  }
+.sinect-values-heading h2 {
+  margin-bottom: 16px;
 
-  .sinect-values-description {
-    font-size: 13px;
-    line-height: 1.8;
-  }
+  font-size: 28px;   /* 기존 32px */
+  line-height: 1.2;
+}
 
-  .sinect-value-grid {
-    grid-template-columns: 1fr;
+.sinect-values-description {
+  font-size: 11px;   /* 기존 13px */
+  line-height: 1.8;
+}
 
-    gap: 18px;
-  }
+.sinect-value-grid {
+  grid-template-columns: 1fr;
+
+  gap: 18px;
+}
 
 
   /* =====================================================
-     SINECT — LOGO SYSTEM
-  ===================================================== */
+   SINECT — LOGO SYSTEM
+===================================================== */
 
-  .sinect-logo-system {
-    width: 100%;
+.sinect-logo-system {
+  width: 100%;
 
-    height: auto;
-    min-height: 460px;
+  height: auto;
+  min-height: 360px;    /* 기존 460px */
 
-    padding: 60px 20px;
-  }
+  padding: 42px 20px;   /* 기존 60px */
 
-  .sinect-logo-label {
-    margin-bottom: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
-    font-size: 14px;
-  }
+  text-align: center;
+}
 
-  /*
-    기존 모바일 코드의
-    .sinect-logo-system img { width:100%; }
-    를 다시 덮어쓰기 위한 선택자
-  */
+.sinect-logo-label {
+  margin-bottom: 28px;
 
-  .sinect-logo-system .sinect-logo-image {
-    width: 52%;
+  font-size: 12px;      /* 기존 14px */
+}
 
-    margin-bottom: 32px;
-  }
+.sinect-logo-system .sinect-logo-image {
+  width: 48%;           /* 기존 52% */
 
-  .sinect-logo-description {
-    width: 90%;
+  margin-bottom: 25px;
+}
 
-    font-size: 13px;
-    line-height: 1.8;
-  }
+.sinect-logo-description {
+  width: 88%;
 
-  .sinect-logo-description br {
-    display: none;
-  }
+  font-size: 11px;      /* 기존 13px */
+  line-height: 1.75;
+
+  text-align: center;
+}
+
+.sinect-logo-description br {
+  display: none;
+}
 
 
   /* =====================================================
@@ -3070,4 +3190,13 @@ nav a {
     height: auto;
   }
 
+}
+
+.about-contact .copyright,
+.work-footer p {
+  font-size: 10px !important;
+  font-weight: 400 !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+  font-family: "Pretendard", sans-serif !important;
 }
