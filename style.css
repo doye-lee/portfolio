@@ -1171,10 +1171,10 @@ nav a {
 
 
 /* ========================================
-   MORPHIX — BRAND STORY / CORE VALUE
+   MORPHIX — BRAND LOGO / CORE VALUE
 ======================================== */
 
-.morphix-story {
+.morphix-logo {
   width: 100%;
 
   padding: 4cqw 5cqw 5cqw;
@@ -1186,9 +1186,9 @@ nav a {
 }
 
 
-/* BRAND STORY 작은 글씨 */
+/* BRAND LOGO 작은 글씨 */
 
-.morphix-story-label {
+.morphix-logo-label {
   width: 86%;
 
   margin: 0 auto 1.2cqw;
@@ -1202,7 +1202,7 @@ nav a {
 
 /* MORPHIX 가로 배너 */
 
-.morphix-story-logo {
+.morphix-logo-logo {
   position: static;
 
   width: 86%;
@@ -2706,16 +2706,16 @@ nav a {
 
 
   /* =====================================================
-     MORPHIX — STORY / CORE VALUE
+     MORPHIX — LOGO / CORE VALUE
   ===================================================== */
 
-  .morphix-story {
+  .morphix-logo {
     min-height: auto;
 
     padding: 60px 20px;
   }
 
-  .morphix-story-label {
+  .morphix-logo-label {
     width: 100%;
 
     margin: 0 0 18px;
@@ -2723,7 +2723,7 @@ nav a {
     font-size: 14px;
   }
 
-  .morphix-story-logo {
+  .morphix-logo-logo {
     width: 100%;
 
     margin: 0;
