@@ -2659,33 +2659,6 @@ nav a {
   flex-direction: column;
 }
 
-/* 음료 이미지가 가장 먼저 */
-.morphix-overview-image {
-  order: 1;
-
-  width: 100%;
-  height: 95vw;
-  max-height: none;
-
-  margin: 0;
-  overflow: hidden;
-}
-
-.morphix-overview-image img {
-  position: absolute;
-
-  left: 50%;
-  top: 50%;
-  right: auto;
-
-  width: 100%;
-  height: 100%;
-
-  transform: translate(-50%, -50%) scale(1.25);
-
-  object-fit: contain;
-  object-position: center;
-}
 
 
 /* Overview / Goals 텍스트 */
@@ -2807,81 +2780,65 @@ nav a {
   ===================================================== */
   
 
-  .morphix-flavors {
-    padding-top: 70px;
-  }
+.morphix-flavors {
+  padding-top: 70px;
+}
 
-  .morphix-flavors-title {
-    width: 90%;
+.morphix-flavors-title {
+  width: 90%;
+  margin: 0 auto 50px;
+  text-align: center;
+}
 
-    margin-bottom: 50px;
-  }
-
-  
-  /*
-    현재 HTML에서 설명 5개와 캔 5개가 서로 다른 Grid라
-    모바일에서는 각각 한 줄씩 세로로 배치
-  */
-
-  .morphix-flavor-info-grid,
+.morphix-flavor-info-grid,
 .morphix-can-grid {
   display: none;
 }
 
 .morphix-flavors-mobile {
   display: flex;
-
   flex-direction: column;
-
   gap: 70px;
-
   padding: 0 20px 70px;
 }
 
 .morphix-flavor-set {
   width: 100%;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
   text-align: center;
 }
 
 .morphix-flavor-set .morphix-flavor-info {
   width: 100%;
-
   padding: 0;
 }
 
 .morphix-flavor-set .morphix-flavor-info h3 {
+  margin: 0 0 10px;
   font-size: 24px;
 }
 
 .morphix-flavor-set .morphix-flavor-info strong {
+  display: block;
+  margin-bottom: 12px;
   font-size: 11px;
 }
 
 .morphix-flavor-set .morphix-flavor-info p {
   width: 85%;
   max-width: 300px;
-
   margin: 0 auto;
-
   font-size: 11px;
   line-height: 1.7;
 }
 
-
-/* 각 설명 바로 아래 캔 */
-
 .morphix-flavor-set img {
   display: block;
-
   width: 38%;
   max-width: 140px;
   height: auto;
-
   margin: 28px auto 0;
 }
 
@@ -2905,7 +2862,7 @@ nav a {
   ===================================================== */
 
 .morphix-experience {
-  padding: 55px 20px 60px;
+  padding: 55px 20px 0;
 }
 
 .morphix-experience-inner {
