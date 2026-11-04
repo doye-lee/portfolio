@@ -1200,19 +1200,15 @@ nav a {
 }
 
 
-/* MORPHIX 가로 배너 */
 
-.morphix-logo-logo {
-  position: static;
+/* 데스크톱에서는 03-logo만 표시 */
 
-  width: 86%;
-  height: auto;
-
-  margin: 0 auto;
-
+.morphix-logo-desktop {
   display: block;
+}
 
-  transform: none;
+.morphix-logo-mobile {
+  display: none;
 }
 
 
@@ -1941,6 +1937,42 @@ nav a {
 .morphix-flavors-mobile {
   display: none;
 }
+
+
+
+
+/* ========================================
+   MORPHIX BRAND LOGO IMAGE
+======================================== */
+
+.morphix-brand-logo {
+  position: static;
+
+  width: 86%;
+  height: auto;
+
+  margin: 0 auto;
+
+  display: block;
+
+  transform: none;
+}
+
+
+/* PC */
+
+.morphix-logo-desktop {
+  display: block;
+}
+
+.morphix-logo-mobile {
+  display: none;
+}
+
+
+
+
+
 
 /* =========================================================
    FINAL MOBILE STYLE
@@ -2709,38 +2741,51 @@ nav a {
 
 
   /* =====================================================
-     MORPHIX — LOGO / CORE VALUE
-  ===================================================== */
+   MORPHIX — LOGO / CORE VALUE
+===================================================== */
 
-  .morphix-logo {
-    min-height: auto;
+.morphix-logo {
+  min-height: auto;
 
-    padding: 60px 20px;
-  }
+  padding: 60px 20px;
+}
 
-  .morphix-logo-label {
-    width: 100%;
+.morphix-logo-label {
+  width: 100%;
 
-    margin: 0 0 18px;
+  margin: 0 0 18px;
 
-    font-size: 14px;
-  }
+  font-size: 14px;
+}
 
-  .morphix-logo-logo {
-    width: 100%;
 
-    margin: 0;
-  }
+/* 모바일에서는 01-logo */
 
-  .morphix-value-label {
-    width: 100%;
+.morphix-logo-desktop {
+  display: none;
+}
 
-    margin: 60px 0 18px;
+.morphix-logo-mobile {
+  display: block;
 
-    font-size: 14px;
-  }
+  width: 45%;
+  height: auto;
 
-  .morphix-value-grid {
+  margin: 0 auto;
+}
+
+
+/* CORE VALUE */
+
+.morphix-value-label {
+  width: 100%;
+
+  margin: 60px 0 18px;
+
+  font-size: 14px;
+}
+
+.morphix-value-grid {
   position: static;
 
   width: 100%;
@@ -2753,11 +2798,14 @@ nav a {
   gap: 26px;
 }
 
-.morphix-value-card {
-  width: 76%;
-  max-width: 290px;
 
-  margin: 0 auto;
+/* 다시 크게 */
+
+.morphix-value-card {
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
 
   border-radius: 14px;
 }
@@ -2776,6 +2824,7 @@ nav a {
   font-size: 11px;
   line-height: 1.6;
 }
+
 
 
   /* =====================================================
