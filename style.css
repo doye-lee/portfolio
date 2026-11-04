@@ -1201,16 +1201,6 @@ nav a {
 
 
 
-/* 데스크톱에서는 03-logo만 표시 */
-
-.morphix-logo-desktop {
-  display: block;
-}
-
-.morphix-logo-mobile {
-  display: none;
-}
-
 
 /* CORE VALUE 작은 글씨 */
 
@@ -2538,73 +2528,58 @@ nav a {
      GRIZEN — BRAND STORY
   ===================================================== */
 
+@media (max-width: 768px) {
+
   .story-section {
     padding: 0;
   }
 
   .story-canvas {
-    width: 100%;
-
-    height: auto;
-    min-height: 760px;
-  }
-
-  .story-bg {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
+    padding: 72px 20px 0;
   }
 
   .story-content {
     width: 100%;
-
-    height: auto;
-    min-height: 760px;
-
-    padding: 65px 20px 40px;
-  }
-
-  .section-label-light {
-    width: 100%;
-
-    margin: 0 0 18;
-
-    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
 
- .story-content h2 {
-  max-width: 100%;
+  .story-content .section-label-light {
+    margin: 0 0 14px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.2;
+  }
 
-  margin: 0 auto;
-
-  font-size: 27px;
-  line-height: 1.25;
-
-  text-align: center;
-}
-
-  .story-content h2 br {
-    display: none;
+  .story-content h2 {
+    width: 100%;
+    margin: 0 0 28px;
+    text-align: center;
+    line-height: 1.22;
   }
 
   .story-description {
-  max-width: 92%;
+    width: 100%;
+    margin: 0 auto 34px;
+    text-align: center;
+    line-height: 1.85;
+  }
 
-  margin: 18px auto 0;
-
-  font-size: 12px;
-  line-height: 1.75;
-
-  text-align: center;
-}
+  .story-content picture {
+    display: block;
+    width: 100%;
+  }
 
   .story-diagram {
+    display: block;
     width: 100%;
-
-    margin: 35px auto 0;
+    max-width: 520px;
+    margin: 0 auto;
+    height: auto;
   }
+}
 
 
   /* =====================================================
@@ -2737,6 +2712,10 @@ nav a {
   line-height: 1.75;
 
   text-align: center;
+}
+
+.morphix-overview-image {
+  display: none;
 }
 
 
