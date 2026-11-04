@@ -2527,7 +2527,7 @@ nav a {
   /* =====================================================
      GRIZEN — BRAND STORY
   ===================================================== */
-
+  
 @media (max-width: 768px) {
 
   .story-section {
@@ -2535,11 +2535,15 @@ nav a {
   }
 
   .story-canvas {
-    padding: 72px 20px 0;
+    position: relative;
+    padding: 56px 20px 0;
+    min-height: auto;
   }
 
   .story-content {
     width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2547,37 +2551,45 @@ nav a {
   }
 
   .story-content .section-label-light {
-    margin: 0 0 14px;
-    text-align: center;
-    font-size: 13px;
+    margin: 0 0 18px;
+    font-size: 15px;
     line-height: 1.2;
+    text-align: center;
   }
 
   .story-content h2 {
     width: 100%;
-    margin: 0 0 28px;
+    margin: 0 0 26px;
+    font-size: 8.6vw;
+    line-height: 1.24;
     text-align: center;
-    line-height: 1.22;
+    word-break: keep-all;
   }
 
   .story-description {
     width: 100%;
     margin: 0 auto 34px;
-    text-align: center;
+    font-size: 4.15vw;
     line-height: 1.85;
+    text-align: center;
+    word-break: keep-all;
   }
 
   .story-content picture {
     display: block;
     width: 100%;
+    margin: 0 auto;
   }
 
   .story-diagram {
     display: block;
     width: 100%;
-    max-width: 520px;
-    margin: 0 auto;
+    max-width: 640px;
     height: auto;
+    margin: 0 auto;
+    position: static;
+    transform: none;
+    object-fit: contain;
   }
 }
 
