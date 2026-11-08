@@ -3337,11 +3337,18 @@ nav a {
 
 }
 
-.about-contact .copyright,
-.work-footer p {
-  font-size: 10px !important;
+/* PROFILE / WORK 공통 copyright */
+
+.about-contact p.site-copyright,
+.work-footer p.site-copyright {
+  margin: 0;
+
+  font-family: "Pretendard", sans-serif;
+
+  font-size: 0.9vw !important;
   font-weight: 400 !important;
   line-height: 1 !important;
   letter-spacing: 0 !important;
-  font-family: "Pretendard", sans-serif !important;
+
+  color: #ffffff;
 }
